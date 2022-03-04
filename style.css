@@ -6,7 +6,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -50,6 +50,14 @@ ul li:hover, ul img:hover{
     cursor: pointer;
 }
 
+header ul a{
+    color: black;
+}
+
+header ul a:visited{
+    color: black;
+}
+
 ul img {
     width: 25px;
     object-fit: cover;
@@ -75,6 +83,7 @@ footer{
     width: 100%;
     height: 50px;
     background-color: whitesmoke;
+    color:gray;
     border-top: 1px solid gainsboro;
 }
 
@@ -84,12 +93,20 @@ footer{
     height: 100%;
 }
 
-.left-footer{
-    margin-left: 20px;
+.left-footer li{
+    margin-right: 10px;
 }
 
-.right-footer{
-    margin-right: 20px;
+.right-footer li{
+    margin-left: 10px;
+}
+
+footer ul a{
+    color: gray;
+}
+
+footer ul a:visited{
+    color: gray;
 }
 
 .container{
@@ -123,16 +140,16 @@ textarea{
     padding-left: 40px;
     width: 500px;
     resize: none;
+    overflow: hidden;
 }
 
 textarea:hover{
-    background-color: whitesmoke;
+    box-shadow: 0px 0px 7px gainsboro;
 }
 
 textarea:focus{
     outline: none !important;
-    background-color: whitesmoke;
-    border: 1px solid gainsboro !important;
+    box-shadow: 0px 0px 7px gainsboro;
 }
 
 .button-container{
@@ -143,18 +160,20 @@ textarea:focus{
 
 .language-change {
     margin: 25px 0;
+    font-size: 1.2rem;
 }
 
-button{
+.button-container button{
     margin: 7px;
-    padding: 10px;
-    background-color: gainsboro;
-    border: 1px solid gainsboro;
-    font-size: 1.2rem;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    color: #333;
+    border: 1px solid transparent;
+    font-size: 1.3rem;
     border-radius: 5px;
 }
 
-button:hover{
-    border: 1px solid gray;
+.button-container button:hover{
+    border: 1px solid gainsboro;
     cursor: pointer;
 }
