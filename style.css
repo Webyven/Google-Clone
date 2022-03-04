@@ -20,7 +20,12 @@ body{
 
 header {
     width: 100vw;
-    height: 75px;
+    height: 70px;
+}
+
+header nav ul li{
+    font-size: 1.3rem;
+    color: #222;
 }
 
 nav{
@@ -50,6 +55,15 @@ ul li:hover, ul img:hover{
     cursor: pointer;
 }
 
+.menu-icon{
+    width: 40px;
+    padding: 7px;
+}
+
+.menu-icon:hover{
+    background-color: #EEE;
+}
+
 header ul a{
     color: black;
 }
@@ -61,12 +75,13 @@ header ul a:visited{
 ul img {
     width: 25px;
     object-fit: cover;
-    margin-left: 20px;
+    margin-left: 10px;
     border-radius: 50%;
 }
 
 .user-profile-icon{
-    width: 30px;
+    width: 40px;
+    padding: 5px;
 }
 
 ul li:hover{
