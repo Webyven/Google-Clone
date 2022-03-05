@@ -27,8 +27,8 @@
                 <textarea name="search" id="google-search" rows="1"></textarea>
             </div>
             <div class="button-container">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+                <button onclick="searchWithGoogle()">Google Search</button>
+                <button onclick="feelingLucky()">I'm Feeling Lucky</button>
             </div>
             <div class="language-change">
                 Google offered in: <a href="#">Spanish</a>
@@ -54,5 +54,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        function searchWithGoogle(){
+            const toSearch = document.getElementById('google-search').value
+            open("https://www.google.com/search?q=" + toSearch);
+        }
+
+        function feelingLucky(){
+            open('https://www.google.com/doodles');
+        }
+    </script>
 </body>
 </html>
